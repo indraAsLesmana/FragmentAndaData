@@ -14,8 +14,8 @@ public class SignInActivity extends AppCompatActivity {
 
         String [] items = getResources().getStringArray(R.array.data_contact);
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this,R.layout.item_contact_list,
-                        R.id.contactList,items);
+                new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,
+                        android.R.id.text1,items);
 
         ListView lv = (ListView) findViewById(R.id.contactList);
         lv.setAdapter(adapter);
